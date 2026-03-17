@@ -67,6 +67,41 @@
 <footer>
    &copy; 2026 El Vestuario. <a href="politica-privacidad.html">Privacidad</a> | <a href="#">Contacto</a>
 </footer>
+<div id="cookie-banner" style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); z-index: 1000; display: none; font-family: sans-serif;">
+    <div style="max-width: 900px; margin: auto; display: flex; flex-direction: column; gap: 15px;">
+        <div>
+            <strong style="color: #1b5e20; font-size: 1.1rem; display: block; margin-bottom: 5px;">🍪 Tu privacidad nos importa</strong>
+            <p style="margin: 0; font-size: 0.9rem; color: #555; line-height: 1.4;">
+                Utilizamos cookies propias y de terceros (como Google AdSense) para analizar el tráfico y mostrarte anuncios personalizados según tus intereses. Al hacer clic en "Aceptar", consientes el uso de todas las cookies. Puedes leer más en nuestra <a href="politica-privacidad.html" style="color: #1b5e20; font-weight: bold;">Política de Privacidad</a>.
+            </p>
+        </div>
+        <div style="display: flex; gap: 10px; justify-content: flex-end;">
+            <button onclick="rejectCookies()" style="background: #eee; color: #333; border: none; padding: 10px 18px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 0.85rem;">Rechazar</button>
+            <button onclick="acceptCookies()" style="background: #1b5e20; color: white; border: none; padding: 10px 25px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 0.85rem;">Aceptar todas</button>
+        </div>
+    </div>
+</div>
 
+<script>
+    // Función para mostrar el banner si no hay decisión previa
+    window.onload = function() {
+        if (!localStorage.getItem('cookies-accepted')) {
+            document.getElementById('cookie-banner').style.display = 'block';
+        }
+    }
+
+    // Al aceptar, guardamos la decisión y ocultamos el banner
+    function acceptCookies() {
+        localStorage.setItem('cookies-accepted', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+        // Aquí es donde más adelante cargarás el script de AdSense
+    }
+
+    // Al rechazar, simplemente ocultamos el banner
+    function rejectCookies() {
+        localStorage.setItem('cookies-accepted', 'false');
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+</script>
 </body>
 </html>
