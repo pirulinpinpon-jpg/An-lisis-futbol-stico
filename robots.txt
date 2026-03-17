@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pirulinpinpon-jpg.github.io/An-lisis-futbol-stico/sitemap.xml
