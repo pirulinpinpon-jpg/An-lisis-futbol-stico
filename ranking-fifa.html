@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Cómo funciona el Ranking FIFA? | El Vestuario</title>
-    <style>body{font-family:sans-serif;line-height:1.6;margin:0;background:#f4f4f4;color:#333;}.container{max-width:800px;margin:20px auto;background:white;padding:40px;border-radius:12px;}h1{color:#1b5e20;}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cómo se calcula el Ranking FIFA? | El Vestuario</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.8; margin: 0; background: #f4f4f4; color: #333; }
+        .article-container { max-width: 800px; margin: 40px auto; background: white; padding: 50px; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); }
+        header { background: #1b5e20; color: white; padding: 20px; text-align: center; }
+        h1 { color: #1b5e20; font-size: 2.2rem; margin-top: 10px; }
+        h2 { color: #2e7d32; border-left: 5px solid #1b5e20; padding-left: 15px; margin-top: 30px; }
+        .meta { color: #777; font-style: italic; margin-bottom: 30px; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #1b5e20; text-decoration: none; font-weight: bold; }
+        .formula-box { background: #f9f9f9; border: 1px solid #ddd; padding: 20px; border-radius: 10px; font-family: 'Courier New', Courier, monospace; text-align: center; font-size: 1.1rem; }
+        .important-note { background: #fff3e0; padding: 15px; border-left: 5px solid #ff9800; margin: 20px 0; }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" style="color:#1b5e20;text-decoration:none;font-weight:bold;">← Inicio</a>
-        <h1>¿Cómo se calculan realmente los puntos en el Ranking FIFA?</h1>
-        <p>No es solo ganar por ganar. La FIFA usa una fórmula matemática llamada <strong>SUMA</strong>.</p>
-        <p>Los puntos dependen de: 1. Resultado del partido. 2. Importancia (un Mundial vale 10 veces más que un amistoso). 3. Fuerza del rival. Por eso, a veces ganar un amistoso contra una selección débil puede hacerte bajar puestos si los demás ganan partidos oficiales.</p>
+
+<header>
+    <h1 style="color: white !important; margin: 0;">⚽ EL VESTUARIO</h1>
+</header>
+
+<div class="article-container">
+    <a href="index.html" class="back-link">← Volver al inicio</a>
+    
+    <span style="color: #1b5e20; font-weight: bold;">DATOS Y ESTADÍSTICAS</span>
+    <h1>¿Cómo se calculan realmente los puntos en el Ranking FIFA?</h1>
+    <p class="meta">Publicado por El Vestuario • 18 de marzo de 2026</p>
+
+    <p>No es solo ganar por ganar. Desde 2018, la FIFA utiliza un modelo matemático llamado <strong>SUMA</strong>, inspirado en el sistema Elo que se usa en el ajedrez. Ya no se trata de promediar puntos anuales, sino de sumar o restar puntos directamente después de cada partido.</p>
+
+    <div class="formula-box">
+        P = Ppre + I * (W - We)
     </div>
+
+    <h2>1. El Valor del Partido (I)</h2>
+    <p>No todos los partidos valen lo mismo. La importancia varía drásticamente según el escenario:</p>
+    <ul>
+        <li><strong>Amistosos:</strong> Son los que menos puntos dan (valor 5 o 10).</li>
+        <li><strong>Eliminatorias:</strong> Tienen un peso intermedio (valor 25).</li>
+        <li><strong>Mundial:</strong> Un partido de Copa del Mundo vale hasta 10 veces más que un amistoso (valor 60).</li>
+    </ul>
+
+    <h2>2. Resultado del Partido (W)</h2>
+    <p>Obviamente, ganar da puntos, empatar da pocos y perder suele restarlos. Sin embargo, en fases de eliminación directa, si pierdes en penales no se restan puntos.</p>
+
+    <h2>3. La Fuerza del Rival (We)</h2>
+    <p>Aquí está el truco: ganar a una selección débil apenas te moverá en la tabla, pero vencer a una del Top 10 te dará un salto enorme. Si pierdes contra un rival muy inferior, la caída en el ranking será dolorosa.</p>
+
+    <div class="important-note">
+        <strong>💡 ¿Sabías que?</strong> Por este sistema, a veces ganar un amistoso contra una selección muy débil puede hacerte bajar puestos si los demás equipos ganan partidos oficiales al mismo tiempo.
+    </div>
+
+    <div style="background: #eee; padding: 20px; border-radius: 10px; margin-top: 40px; text-align: center;">
+        <p><strong>¿Te gusta la estadística futbolera?</strong> ¡Explora más análisis técnicos en nuestra web!</p>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 20px; color: #888;">
+    <p>&copy; 2026 El Vestuario</p>
+</footer>
+
 </body>
 </html>
