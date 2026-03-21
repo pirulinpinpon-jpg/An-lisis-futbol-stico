@@ -3,59 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Entiendes el Fuera de Lugar? | El Vestuario</title>
+    <title>Fábricas de Talentos | El Vestuario</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.8; margin: 0; background: #f4f4f4; color: #333; }
-        .article-container { max-width: 800px; margin: 40px auto; background: white; padding: 50px; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); }
-        header { background: #1b5e20; color: white; padding: 20px; text-align: center; }
-        h1 { color: #1b5e20; font-size: 2.5rem; margin-top: 10px; }
-        h2 { color: #2e7d32; border-left: 5px solid #1b5e20; padding-left: 15px; margin-top: 30px; }
-        .meta { color: #777; font-style: italic; margin-bottom: 30px; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #1b5e20; text-decoration: none; font-weight: bold; }
-        .highlight-box { background: #e8f5e9; border-radius: 10px; padding: 20px; margin: 25px 0; border-left: 5px solid #2e7d32; }
+        :root { --primary: #1b5e20; --dark: #1a1a1a; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; background: #f4f4f4; color: #333; }
+        
+        /* Navbar superior */
+        .navbar { background: var(--primary); color: white; padding: 15px; text-align: center; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .navbar h1 { margin: 0; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px; }
+
+        .container-article { max-width: 800px; margin: 40px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        
+        .back-link { color: var(--primary); text-decoration: none; font-weight: bold; font-size: 0.9rem; margin-bottom: 20px; display: inline-block; }
+        
+        h2.article-title { color: var(--primary); font-size: 2.5rem; line-height: 1.2; margin: 20px 0; }
+        .meta { color: #888; font-style: italic; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+
+        /* Estilo de los subtítulos con la línea verde al lado */
+        .subtitle-section { border-left: 5px solid var(--primary); padding-left: 15px; margin: 30px 0 15px; color: var(--primary); font-size: 1.6rem; }
+        
+        /* Nota importante */
+        .note { background: #e8f5e9; border-left: 5px solid #4caf50; padding: 15px; margin: 20px 0; border-radius: 4px; }
+        
+        .btn-footer { background: var(--primary); color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; display: inline-block; margin-top: 30px; }
+        img.main-img { width: 100%; border-radius: 8px; margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
-<header>
-    <h1 style="color: white !important; margin: 0;">⚽ EL VESTUARIO</h1>
-</header>
-
-<div class="article-container">
-    <a href="index.html" class="back-link">← Volver al inicio</a>
-    
-    <span style="color: #1b5e20; font-weight: bold;">REGLAMENTO EXPLICADO</span>
-    <h1>¿Entiendes el Fuera de Lugar? La regla que define partidos</h1>
-    <p class="meta">Publicado por El Vestuario • 18 de marzo de 2026</p>
-
-    <p>El fuera de juego (offside) es, posiblemente, la regla más polémica y difícil de explicar en el fútbol. No se trata solo de estar adelantado; se trata de <strong>geometría y precisión</strong> en el momento exacto.</p>
-
-    <h2>1. La Posición Prohibida</h2>
-    <p>Un jugador está en posición de fuera de juego si cualquier parte de su <strong>cabeza, tronco o piernas</strong> se encuentra en la mitad del campo rival y más cerca de la línea de meta que el balón y el penúltimo adversario.</p>
-
-    <div class="highlight-box">
-        <strong>⚠️ Nota Importante:</strong> Las manos y los brazos de los jugadores (incluyendo a los porteros) no cuentan para determinar la posición de fuera de juego.
-    </div>
-
-    <h2>2. El Momento del Contacto</h2>
-    <p>Lo que define la infracción es el <strong>preciso instante</strong> en que el balón es tocado o jugado por un compañero. Si en ese microsegundo estás en posición legal, puedes sobrepasar a los defensas después de que el balón haya salido del pie de tu compañero.</p>
-
-    <h2>3. ¿Cuándo NO hay infracción?</h2>
-    <p>Existen excepciones clave donde nunca se pitará fuera de juego, incluso si estás adelantado:</p>
-    <ul>
-        <li><strong>Tu propia mitad:</strong> Nunca hay fuera de juego si el jugador está en su propio campo.</li>
-        <li><strong>Saque de banda:</strong> No existe infracción si recibes el balón directamente de un saque lateral.</li>
-        <li><strong>Saque de meta o esquina:</strong> Tampoco aplica en recepciones directas de córner o saque de puerta.</li>
-    </ul>
-
-    <div style="background: #eee; padding: 20px; border-radius: 10px; margin-top: 40px; text-align: center;">
-        <p><strong>¿Te aclaró las dudas?</strong> ¡Suscríbete para más análisis de reglamento!</p>
-    </div>
+<div class="navbar">
+    <span>⚽</span> <h1>EL VESTUARIO</h1>
 </div>
 
-<footer style="text-align: center; padding: 20px; color: #888;">
-    <p>&copy; 2026 El Vestuario</p>
-</footer>
+<div class="container-article">
+    <a href="index.html" class="back-link">← Volver al inicio ANÁLISIS DE FORMACIÓN</a>
+    
+    <h2 class="article-title">Fábricas de Talentos: Mejores Canteras</h2>
+    
+    <p class="meta">Publicado por El Vestuario • 18 de marzo de 2026</p>
+
+    <img src="https://images.unsplash.com/photo-1526232762682-d2f5f6ca5042?q=80&w=800" alt="Canteras de fútbol" class="main-img">
+
+    <p>El fútbol moderno no solo se trata de billeteras grandes, sino de quién forma mejor a sus jóvenes talentos. La sostenibilidad de un club depende de su capacidad para producir jugadores de élite.</p>
+
+    <div class="note">
+        <strong>Nota Importante:</strong> El proceso de formación puede durar más de una década antes de ver resultados en el primer equipo.
+    </div>
+
+    <h3 class="subtitle-section">1. La Masía: El ADN del Barça</h3>
+    <p>No se puede hablar de canteras sin mencionar el lugar donde se formaron Messi, Xavi e Iniesta. Su filosofía de juego posicional es única en el mundo y sigue siendo el estándar de oro.</p>
+
+    <h3 class="subtitle-section">2. Ajax: La Escuela Total</h3>
+    <p>El equipo holandés ha perfeccionado el arte de vender caro y producir constante. Su sistema de captación y desarrollo técnico es un referente global.</p>
+
+    <div style="text-align: center;">
+        <a href="index.html" class="btn-footer">← Volver al Inicio</a>
+    </div>
+</div>
 
 </body>
 </html>
