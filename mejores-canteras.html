@@ -3,30 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Las Mejores Canteras del Mundo | El Vestuario</title>
+    <title>Fábricas de Talentos | El Vestuario</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; background: #f4f4f4; }
-        header { background: #1a1a1a; color: white; padding: 20px; text-align: center; border-radius: 8px; }
-        .content { background: white; padding: 30px; margin-top: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h1 { color: #1b5e20; }
-        .back-btn { display: inline-block; margin-top: 20px; color: #1b5e20; text-decoration: none; font-weight: bold; }
+        :root { --primary: #1b5e20; --gold: #ffcc00; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; background: #000; color: #fff; }
+        
+        header { background: #1a1a1a; padding: 30px; text-align: center; border-bottom: 3px solid var(--primary); }
+        .hero { 
+            height: 400px; width: 100%; position: relative; 
+            background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.9)), 
+                        url('https://images.unsplash.com/photo-1526232762682-d2f5f6ca5042?q=80&w=1200');
+            background-size: cover; background-position: center; display: flex; align-items: flex-end;
+        }
+        .hero-title { padding: 40px; max-width: 900px; margin: 0 auto; width: 100%; }
+        .hero-title h1 { font-size: 3rem; margin: 0; text-transform: uppercase; font-weight: 900; }
+        .category { color: var(--gold); font-weight: bold; text-transform: uppercase; letter-spacing: 2px; }
+
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; background: #111; padding: 40px; border-radius: 10px; }
+        p { font-size: 1.1rem; color: #ccc; margin-bottom: 25px; }
+        h2 { color: var(--primary); border-left: 5px solid var(--gold); padding-left: 15px; margin-top: 40px; }
+        
+        footer { text-align: center; padding: 40px; background: #1a1a1a; margin-top: 60px; border-top: 1px solid #333; }
+        footer a { color: #fff; text-decoration: none; margin: 0 10px; font-size: 0.9rem; opacity: 0.7; }
+        .back-btn { display: inline-block; background: var(--primary); color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 20px; }
     </style>
 </head>
 <body>
-    <header><h1>EL VESTUARIO</h1></header>
-    <div class="content">
-        <h1>Fábricas de Talentos: Las Mejores Canteras</h1>
-        <p>El fútbol moderno no solo se trata de billeteras grandes, sino de quién forma mejor a sus jóvenes. Desde la mítica <strong>La Masía</strong> del FC Barcelona hasta la inagotable fuente del <strong>Ajax</strong> en Ámsterdam.</p>
-        
-        <h2>La Masía: El ADN del Barça</h2>
-        <p>No se puede hablar de canteras sin mencionar el lugar donde se formaron Messi, Xavi e Iniesta. Su filosofía de juego posicional es única en el mundo.</p>
 
-        <h2>Ajax: La Escuela Total</h2>
-        <p>El equipo holandés ha perfeccionado el arte de vender caro y producir constante. Cruyff fue su máximo exponente y su legado sigue vivo.</p>
-        
-        <p>Otras canteras destacadas incluyen al Benfica, Santos de Brasil y Envigado en Colombia, cuna de James Rodríguez.</p>
-        
-        <a href="index.html" class="back-btn">← Volver al inicio</a>
+<header><h1 style="margin:0; letter-spacing: 4px;">EL VESTUARIO</h1></header>
+
+<section class="hero">
+    <div class="hero-title">
+        <span class="category">Análisis de Formación</span>
+        <h1>Fábricas de Talentos: Mejores Canteras</h1>
     </div>
+</section>
+
+<main class="container">
+    <p>El fútbol moderno no solo se trata de billeteras grandes, sino de quién forma mejor a sus jóvenes talentos. La sostenibilidad de un club depende de su capacidad para producir jugadores de élite.</p>
+    
+    <h2>La Masía: El ADN del Barça</h2>
+    <p>No se puede hablar de canteras sin mencionar el lugar donde se formaron Messi, Xavi e Iniesta. Su filosofía de juego posicional es única en el mundo y sigue siendo el estándar de oro.</p>
+
+    <h2>Ajax: La Escuela Total</h2>
+    <p>El equipo holandés ha perfeccionado el arte de vender caro y producir constante. Su sistema de captación y desarrollo técnico es un referente global para cualquier club que aspire a la excelencia.</p>
+    
+    <p>Otras canteras destacadas que están dominando el mercado actual incluyen al Benfica en Portugal y al Santos en Brasil, fuentes inagotables de cracks mundiales.</p>
+
+    <center><a href="index.html" class="back-btn">← Volver al Inicio</a></center>
+</main>
+
+<footer>
+    <p>© 2026 El Vestuario. Todos los derechos reservados.</p>
+    <a href="index.html">Inicio</a> | <a href="privacidad.html">Privacidad</a> | <a href="contacto.html">Contacto</a>
+</footer>
+
 </body>
 </html>
