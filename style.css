@@ -1,3 +1,27 @@
+/* Definición de variables de color */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --card-bg: #f4f4f4;
+            --header-bg: #1a1a1a;
+        }
+
+        /* Clase para Modo Oscuro manual */
+        body.dark-mode {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --header-bg: #000000;
+        }
+
+        /* Aplicar las variables */
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .card { background-color: var(--card-bg); }
 :root {
     --primary: #2e7d32; /* Verde fútbol */
     --dark: #1b1b1b;
