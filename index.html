@@ -328,6 +328,31 @@
     <span>Usamos cookies para mejorar tu experiencia y monetizar con Google AdSense.</span>
     <button class="btn-cookie" onclick="document.getElementById('cookie-banner').style.display='none'">Aceptar</button>
 </div>
+<script>
+        const toggleBtn = document.getElementById('dark-mode-toggle');
+        const body = document.body;
 
+        // 1. Al cargar la página, revisamos si el usuario ya había elegido el modo oscuro antes
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            toggleBtn.innerHTML = '☀️ Modo Claro'; // Cambia el texto del botón si ya está oscuro
+        }
+
+        // 2. Escuchamos cuando el usuario hace clic en el botón
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            // 3. Guardamos la elección y actualizamos el texto del botón
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                toggleBtn.innerHTML = '☀️ Modo Claro';
+            } else {
+                localStorage.setItem('theme', 'light');
+                toggleBtn.innerHTML = '🌙 Modo Oscuro';
+            }
+        });
+    </script>
+</body>
+</html>
 </body>
 </html>
