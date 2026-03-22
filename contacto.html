@@ -4,68 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | El Vestuario</title>
-    <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.8; margin: 0; background: #f4f4f4; color: #333; }
-        header { background-color: #1b5e20 !important; color: white !important; padding: 25px; text-align: center; }
-        header h1 { margin: 0; color: white !important; font-size: 2rem; display: flex; align-items: center; justify-content: center; gap: 10px; }
-        .article-container { max-width: 800px; margin: 40px auto; background: white; padding: 50px; border-radius: 15px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); box-sizing: border-box; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: #1b5e20; text-decoration: none; font-weight: bold; }
-        h1.content-title { color: #1b5e20; font-size: 2.2rem; margin-top: 0; }
-        
-        /* Estilos del Formulario */
-        .form-group { margin-bottom: 20px; }
-        label { display: block; font-weight: bold; margin-bottom: 5px; color: #1b5e20; }
-        input, textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-size: 1rem; }
-        textarea { height: 120px; resize: vertical; }
-        .btn-send { background: #1b5e20; color: white; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-size: 1.1rem; font-weight: bold; width: 100%; transition: background 0.3s; }
-        .btn-send:hover { background: #2e7d32; }
-        
-        .social-links { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; }
-        .social-links a { margin: 0 15px; text-decoration: none; color: #1b5e20; font-weight: bold; }
-        footer { text-align: center; padding: 20px; color: #888; }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
 
-<header>
-    <h1>⚽ EL VESTUARIO</h1>
+<header class="site-header">
+    <a href="index.html" class="logo">⚽ El Vestuario</a>
+    <div class="header-right">
+        <button class="theme-toggle">🌙 Modo Oscuro</button>
+    </div>
 </header>
 
-<div class="article-container">
-    <a href="index.html" class="back-link">← Volver al inicio</a>
-    
-    <h1 class="content-title">Contacto</h1>
-    <p>¿Tienes alguna duda sobre un análisis táctico o una propuesta de colaboración? Escríbeme y hablemos de fútbol.</p>
+<div class="legal-body">
+    <p><a href="index.html" style="color: var(--primary); font-weight: bold; text-decoration: none; font-family: sans-serif; font-size: 0.9rem;">← Volver al inicio</a></p>
 
-    <form action="#">
-        <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
-        </div>
-        
-        <div class="form-group">
-            <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-        </div>
-
-        <div class="form-group">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="¿En qué puedo ayudarte?" required></textarea>
-        </div>
-
-        <button type="submit" class="btn-send">Enviar Mensaje</button>
-    </form>
-
+    <h1>Contacto</h1>
+    <p>¿Tienes una duda sobre un análisis táctico o una propuesta de colaboración? Escríbeme y hablemos de fútbol.</p>
+    <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre...">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="¿En qué puedo ayudarte?"></textarea>
+        <button class="btn-send">Enviar Mensaje</button>
+    </div>
     <div class="social-links">
         <p>También puedes encontrarme en:</p>
         <a href="#">TikTok</a>
         <a href="#">YouTube</a>
         <a href="#">Twitter (X)</a>
     </div>
+
 </div>
 
-<footer>
-    <p>&copy; 2026 El Vestuario</p>
+<footer class="global-footer">
+    <p>© 2026 El Vestuario. Todos los derechos reservados.</p>
+    <div>
+        <a href="quienes-somos.html">Quiénes Somos</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos y Condiciones</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
 </footer>
 
 </body>

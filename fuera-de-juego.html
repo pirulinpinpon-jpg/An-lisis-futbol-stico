@@ -2,52 +2,58 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Entiendes el Fuera de Juego? | El Vestuario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
-<body style="background-color: #f4f4f4; margin: 0; font-family: 'Segoe UI', sans-serif; color: #333;">
+<body>
 
-    <div style="background-color: #1b5e20; color: white; padding: 20px; text-align: center;">
-        <h1 style="margin: 0; font-size: 1.8rem; letter-spacing: 2px;">⚽ EL VESTUARIO</h1>
+<header class="site-header">
+    <a href="index.html" class="logo">⚽ El Vestuario</a>
+    <div class="header-right">
+        <a href='index.html' class='back-link'>← Inicio</a>
+        <button class="theme-toggle">🌙 Modo Oscuro</button>
     </div>
+</header>
 
-    <div style="max-width: 800px; margin: 40px auto; background-color: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-        
-        <a href="index.html" style="color: #1b5e20; text-decoration: none; font-weight: bold; font-size: 0.9rem;">← Volver al inicio</a>
-        
-        <h2 style="color: #1b5e20; font-size: 2.5rem; margin: 20px 0;">¿Entiendes el Fuera de Juego? La regla que define partidos</h2>
-        
-        <p style="color: #888; font-style: italic;">Publicado por El Vestuario • 18 de marzo de 2026</p>
-
-        <p>El fuera de juego (offside) es, posiblemente, la regla más polémica y difícil de explicar en el fútbol. No se trata solo de estar adelantado; se trata de <strong>geometría y precisión</strong> en el momento exacto.</p>
-
-        <div style="border-left: 5px solid #1b5e20; padding-left: 15px; margin: 30px 0 15px;">
-            <h3 style="margin: 0; color: #1b5e20; font-size: 1.6rem;">1. La Posición Prohibida</h3>
-        </div>
-        <p>Un jugador está en posición de fuera de juego si cualquier parte de su <strong>cabeza, tronco o piernas</strong> se encuentra en la mitad del campo rival y más cerca de la línea de meta que el balón y el penúltimo adversario.</p>
-
-        <div style="background-color: #e8f5e9; border-left: 5px solid #4caf50; padding: 15px; margin: 20px 0; border-radius: 4px;">
-            <p style="margin: 0;"><strong>⚠️ Nota Importante:</strong> Las manos y los brazos de los jugadores (incluyendo a los porteros) no cuentan para determinar la posición de fuera de juego.</p>
-        </div>
-
-        <div style="border-left: 5px solid #1b5e20; padding-left: 15px; margin: 30px 0 15px;">
-            <h3 style="margin: 0; color: #1b5e20; font-size: 1.6rem;">2. El Momento del Contacto</h3>
-        </div>
-        <p>Lo que define la infracción es el <strong>preciso instante</strong> en que el balón es tocado o jugado por un compañero. Si en ese microsegundo estás en posición legal, puedes sobrepasar a los defensas después de que el balón haya salido del pie de tu compañero.</p>
-
-        <div style="border-left: 5px solid #1b5e20; padding-left: 15px; margin: 30px 0 15px;">
-            <h3 style="margin: 0; color: #1b5e20; font-size: 1.6rem;">3. ¿Cuándo NO hay infracción?</h3>
-        </div>
-        <p>Existen excepciones clave donde nunca se pitará fuera de juego, incluso si estás adelantado:</p>
-        <ul style="padding-left: 20px;">
-            <li style="margin-bottom: 10px;"><strong>Tu propia mitad:</strong> Nunca hay fuera de juego si el jugador está en su propio campo.</li>
-            <li style="margin-bottom: 10px;"><strong>Saque de banda:</strong> No existe infracción si recibes el balón directamente de un saque lateral.</li>
-            <li style="margin-bottom: 10px;"><strong>Saque de meta o esquina:</strong> Tampoco aplica en recepciones directas de córner o saque de puerta.</li>
-        </ul>
-
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="index.html" style="background-color: #1b5e20; color: white; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; display: inline-block;">← Volver al Inicio</a>
-        </div>
+<div class="article-hero">
+    <div class="article-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1400');"></div>
+    <div class="article-hero-overlay"></div>
+    <div class="article-hero-content">
+        <span class="category-tag">REGLAMENTO</span>
+        <h1>¿Entiendes el Fuera de Juego? La regla que define partidos</h1>
+        <p class="meta">Publicado por El Vestuario • 18 de marzo de 2026</p>
     </div>
+</div>
+
+<div class="article-card">
+<p>El fuera de juego es una de las reglas más polémicas y mal entendidas del fútbol. Con la llegada del VAR y el semiautomático, el debate se ha intensificado. Aquí te explicamos todo desde cero.</p>
+
+<h2>¿Cuándo es fuera de juego?</h2>
+<p>Un jugador está en posición de fuera de juego si, en el momento en que el balón es jugado por un compañero, se encuentra más cerca de la línea de gol adversaria que el balón y el penúltimo defensor rival.</p>
+
+<div class="dato-elite"><p><strong>📐 Dato Élite:</strong> El sistema semiautomático de detección de offside puede calcular la posición de 29 puntos del cuerpo de cada jugador a 50 fotogramas por segundo.</p></div>
+
+<h2>¿Posición o acción?</h2>
+<p>Estar en posición de fuera de juego no es en sí mismo una infracción. Solo se sanciona si el jugador interviene en el juego, interfiere con un adversario u obtiene una ventaja de esa posición.</p>
+
+<h2>El milímetro que lo cambia todo</h2>
+<p>Con el VAR, la exactitud es tal que un codo, una punta del pie o hasta la axila pueden determinar si el gol es válido. Esto ha generado un intenso debate sobre si la letra estricta del reglamento refleja el espíritu del juego.</p>
+<div class="article-cta">
+    <a href="index.html" class="btn-back">← Volver al Inicio</a>
+</div>
+</div>
+
+<footer class="global-footer">
+    <p>© 2026 El Vestuario. Todos los derechos reservados.</p>
+    <div>
+        <a href="quienes-somos.html">Quiénes Somos</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos y Condiciones</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
+</footer>
 
 </body>
 </html>

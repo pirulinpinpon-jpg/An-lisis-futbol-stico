@@ -148,6 +148,7 @@
         #cookie-banner { position: fixed; bottom: 0; width: 100%; background: #222; color: #fff; padding: 15px; text-align: center; z-index: 1000; font-size: 14px; }
         .btn-cookie { background: var(--primary); color: white; border: none; padding: 8px 18px; cursor: pointer; border-radius: 4px; margin-left: 10px; }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -248,7 +249,7 @@
                 </div>
             </a>
 
-  <a href="var-tecnologia.html" class="card">
+  <a href="tecnologia-var.html" class="card">
     <div class="card-bg" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.95)), url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=600');"></div>
     <div class="card-content">
         <span class="card-category" style="color: var(--gold); font-weight: bold; font-size: 0.7rem;">TECNOLOGÍA</span>
@@ -328,31 +329,10 @@
     <span>Usamos cookies para mejorar tu experiencia y monetizar con Google AdSense.</span>
     <button class="btn-cookie" onclick="document.getElementById('cookie-banner').style.display='none'">Aceptar</button>
 </div>
-<script>
-        const toggleBtn = document.getElementById('dark-mode-toggle');
-        const body = document.body;
 
-        // 1. Al cargar la página, revisamos si el usuario ya había elegido el modo oscuro antes
-        if (localStorage.getItem('theme') === 'dark') {
-            body.classList.add('dark-mode');
-            toggleBtn.innerHTML = '☀️ Modo Claro'; // Cambia el texto del botón si ya está oscuro
-        }
-
-        // 2. Escuchamos cuando el usuario hace clic en el botón
-        toggleBtn.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            
-            // 3. Guardamos la elección y actualizamos el texto del botón
-            if (body.classList.contains('dark-mode')) {
-                localStorage.setItem('theme', 'dark');
-                toggleBtn.innerHTML = '☀️ Modo Claro';
-            } else {
-                localStorage.setItem('theme', 'light');
-                toggleBtn.innerHTML = '🌙 Modo Oscuro';
-            }
-        });
-    </script>
+<script src="main.js"></script>
 </body>
 </html>
+<script src="main.js"></script>
 </body>
 </html>
