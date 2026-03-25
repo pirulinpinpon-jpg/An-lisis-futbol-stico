@@ -1,17 +1,80 @@
-<div class="article-hero" style="
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9)), url('canteras.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding: 20px;
-">
-    <span style="background: #1b5e20; padding: 5px 15px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-bottom: 15px;">ANÁLISIS</span>
-    <h1 style="font-size: 3rem; max-width: 800px; margin: 0;">Fábricas de Talentos: Las Mejores Canteras del Mundo</h1>
-    <p style="margin-top: 15px; opacity: 0.8;">Publicado por El Vestuario • 22 de marzo de 2026</p>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábricas de Talentos: Las Mejores Canteras del Mundo - El Vestuario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS necesario para el efecto de la imagen SIN borrar nada */
+        .article-header {
+            background-color: #f4f4f4; /* Fondo gris claro general */
+            padding-bottom: 20px;
+        }
+
+        /* Esta es la parte de la imagen de fondo, aplicada SOLO al contenedor de arriba */
+        .hero-banner {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9)), url('canteras.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Título abajo, como en el index */
+            padding: 30px;
+            color: white;
+            text-align: left;
+        }
+
+        /* La "tarjeta blanca" central que te borré. ¡Aquí está de vuelta! */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto; /* Centrada */
+            margin-top: -50px; /* Sube la tarjeta para pisar la imagen */
+            background: white; /* Fondo blanco de la tarjeta */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background-color: #1b5e20; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
+        <div style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 1.2rem;">⚽ EL VESTUARIO</div>
+        <a href="index.html" style="color: white; text-decoration: none; font-size: 0.9rem;">← Inicio</a>
+    </header>
+
+    <div class="article-header">
+        <div class="hero-banner">
+            <span style="color: #ffd700; font-weight: bold; font-size: 0.8rem;">ANÁLISIS</span>
+            <h1 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin: 5px 0 10px 0;">Fábricas de Talentos: Las Mejores Canteras del Mundo</h1>
+            <p style="margin: 0; opacity: 0.8; font-size: 0.9rem;">Publicado por El Vestuario • 22 de marzo de 2026</p>
+        </div>
+
+        <div class="article-container">
+            <p class="lead" style="font-size: 1.1rem; color: #555; line-height: 1.6;">En el fútbol moderno, donde los fichajes son astronómicos, la capacidad de formar jugadores desde la base se ha convertido en una ventaja competitiva fundamental. Las canteras no solo son el alma de los clubes, sino también su salvación financiera.</p>
+            
+            <p>Analizamos las estructuras de formación más exitosas del planeta, aquellas que de manera consistente producen jugadores de élite que definen épocas.</p>
+
+            <p style="margin-top: 20px;"><b>[Aquí va todo el resto del texto detallado del artículo: La Masía, Ajax, Boca Juniors, Benfica, etc...]</b></p>
+            
+            <p>Puedes ir pegando aquí el resto de tu contenido original...</p>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 30px; background-color: #f4f4f4; margin-top: 40px;">
+        <p style="font-size: 0.9rem; color: #777;">&copy; 2026 El Vestuario. Todos los derechos reservados.</p>
+        <div style="margin-top: 10px;">
+            <a href="quienes-somos.html" style="margin: 0 10px; color: #1b5e20; text-decoration: none;">Quiénes Somos</a> |
+            <a href="privacidad.html" style="margin: 0 10px; color: #1b5e20; text-decoration: none;">Privacidad</a> |
+            <a href="terminos.html" style="margin: 0 10px; color: #1b5e20; text-decoration: none;">Términos y Condiciones</a> |
+            <a href="contacto.html" style="margin: 0 10px; color: #1b5e20; text-decoration: none;">Contacto</a>
+        </div>
+    </footer>
+
+</body>
+</html>
