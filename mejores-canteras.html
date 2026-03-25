@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;700;400i&display=swap" rel="stylesheet">
     
     <style>
-        /* Estilos base */
         body {
             background-color: #f4f4f4;
             margin: 0;
@@ -17,7 +16,7 @@
             line-height: 1.8;
         }
 
-        /* 1. Header Verde Superior */
+        /* 1. HEADER VERDE */
         .main-header {
             background-color: #1b5e20;
             color: white;
@@ -30,134 +29,129 @@
             z-index: 100;
         }
         
-        /* Título como enlace */
+        /* Logo con enlace al inicio */
         .header-logo a { 
             font-weight: 700; 
             font-size: 1.2rem; 
-            letter-spacing: 1px; 
             color: white; 
             text-decoration: none; 
             display: flex;
             align-items: center;
         }
         
-        .header-links { display: flex; align-items: center; gap: 20px; }
-        .header-links a { color: white; text-decoration: none; font-size: 0.9rem; }
-        .btn-dark-mode { background: transparent; border: 1px solid rgba(255,255,255,0.5); color: white; padding: 5px 15px; border-radius: 20px; cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.8rem; font-weight: bold; }
+        .btn-dark-mode { 
+            background: transparent; 
+            border: 1px solid rgba(255,255,255,0.5); 
+            color: white; 
+            padding: 5px 15px; 
+            border-radius: 20px; 
+            cursor: pointer; 
+            font-weight: bold; 
+        }
 
-        /* 2. HERO SECTION con IMAGEN FORZADA */
+        /* 2. HERO SECTION (Imagen de la cancha) */
         .article-hero {
-            /* Imagen de respaldo si la ruta falla */
-            background-color: #000;
-            /* La imagen se define en el HTML para evitar errores de ruta en CSS */
-            background-size: cover;
-            background-position: center;
+            position: relative;
             height: 450px; 
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
-            z-index: 10;
+            background-color: #000;
+            overflow: hidden;
         }
 
-        /* Capa de oscuridad para que el texto sea legible */
-        .hero-overlay {
+        .hero-bg {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8));
+            background-image: url('canteras.jpg'); /* Asegúrate de que este nombre sea exacto en GitHub */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.6; 
             z-index: 1;
         }
 
         .hero-content {
-            max-width: 800px;
-            width: 100%;
-            margin: 0 auto;
-            text-align: left;
-            padding: 20px;
-            color: white;
             position: relative;
-            z-index: 2; /* Por encima del overlay */
+            z-index: 2;
+            max-width: 850px;
+            width: 100%;
+            padding: 0 40px;
+            color: white;
+            text-align: left;
         }
 
         .badge-categoria {
             background-color: #1b5e20;
             color: white;
-            display: inline-block;
-            padding: 6px 12px;
+            padding: 5px 12px;
             font-family: 'Montserrat', sans-serif;
             font-size: 0.7rem;
             font-weight: bold;
-            letter-spacing: 1px;
             text-transform: uppercase;
+            border-radius: 2px;
+            display: inline-block;
             margin-bottom: 15px;
-            border-radius: 3px;
         }
 
         .hero-content h1 {
             font-family: 'Lora', serif;
-            font-size: 3rem;
+            font-size: 3.2rem;
             margin: 0 0 10px 0;
             line-height: 1.1;
+            font-weight: 700;
         }
 
         .hero-meta {
             font-family: 'Montserrat', sans-serif;
-            color: #ddd;
-            font-size: 0.85rem;
+            color: #ccc;
+            font-size: 0.9rem;
         }
 
-        /* 3. Tarjeta Blanca de Contenido */
+        /* 3. TARJETA BLANCA DE CONTENIDO */
         .article-container {
             max-width: 800px;
-            margin: -80px auto 60px auto; 
+            margin: -70px auto 60px auto; 
             background-color: white;
-            padding: 50px;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            padding: 60px;
+            border-radius: 10px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
             position: relative;
-            z-index: 50;
+            z-index: 10;
         }
 
         h2 {
             font-family: 'Montserrat', sans-serif;
             color: #1b5e20;
-            border-left: 4px solid #1b5e20;
-            padding-left: 15px;
-            margin-top: 40px;
-            font-size: 1.5rem;
+            border-left: 5px solid #1b5e20;
+            padding-left: 20px;
+            margin-top: 45px;
+            font-size: 1.6rem;
         }
 
         .dato-elite {
             background-color: #f1f8e9;
-            border-left: 5px solid #4caf50;
+            border-left: 6px solid #4caf50;
             padding: 25px;
-            margin: 30px 0;
+            margin: 35px 0;
             font-style: italic;
         }
 
-        .btn-volver-container { text-align: center; margin-top: 40px; }
+        .btn-volver-container { text-align: center; margin-top: 50px; }
         .btn-volver {
             background-color: #1b5e20;
             color: white;
-            padding: 15px 30px;
+            padding: 15px 35px;
             text-decoration: none;
             border-radius: 5px;
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
+            transition: 0.3s;
         }
-
-        /* Footer */
-        .main-footer {
-            background-color: #111;
-            color: #777;
-            text-align: center;
-            padding: 50px 20px;
-            font-family: 'Montserrat', sans-serif;
-        }
+        .btn-volver:hover { background-color: #0e3d11; }
 
         @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.2rem; }
-            .article-container { padding: 30px 20px; margin-top: -40px; }
+            .hero-content h1 { font-size: 2.3rem; }
+            .article-container { padding: 30px; margin-top: -40px; }
         }
     </style>
 </head>
@@ -172,8 +166,8 @@
         </div>
     </header>
 
-    <div class="article-hero" style="background-image: url('canteras.jpg');">
-        <div class="hero-overlay"></div>
+    <div class="article-hero">
+        <div class="hero-bg"></div>
         <div class="hero-content">
             <span class="badge-categoria">ANÁLISIS</span>
             <h1>Fábricas de Talentos: Las Mejores Canteras del Mundo</h1>
@@ -182,26 +176,30 @@
     </div>
 
     <main class="article-container">
-        
-        <p>No todos los grandes jugadores nacen; muchos se forjan en las canteras. Estas academias son laboratorios donde el talento en bruto se convierte en obra de arte futbolística.</p>
+        <p>No todos los grandes jugadores nacen; muchos se forjan en las canteras. Estas academias son laboratorios donde el talento en bruto se convierte en obra de arte futbolística. ¿Cuáles son las mejores del mundo?</p>
 
         <h2>La Masia (FC Barcelona)</h2>
-        <p>La academia más famosa del mundo produjo a Messi, Xavi e Iniesta en una misma generación. Su modelo de juego basado en el toque corto dejó una huella permanente en el fútbol global.</p>
+        <p>La academia más famosa del mundo produjo a Messi, Xavi, Iniesta, Busquets, Piqué y Cesc Fàbregas en una misma generación. Su modelo de juego basado en el toque corto y la inteligencia posicional dejó una huella permanente en el fútbol global.</p>
 
         <div class="dato-elite">
-            🏆 <strong>Dato Élite:</strong> En 2012, el once titular de la selección española estaba formado casi totalmente por jugadores de La Masia.
+            🏆 <strong>Dato Élite:</strong> En 2012, el once titular de la selección española que dominó el mundo estaba formado mayoritariamente por jugadores formados en La Masia. Algo irrepetible en la historia del fútbol.
         </div>
 
         <h2>Ajax Amsterdam</h2>
-        <p>La academia holandesa lleva décadas produciendo jugadores técnicamente perfectos bajo la filosofía del Fútbol Total.</p>
+        <p>La academia holandesa lleva décadas produciendo jugadores técnicamente perfectos. Su filosofía del Fútbol Total impregna cada etapa de formación, enseñando a los niños a jugar en todos los puestos antes de especializarse.</p>
+
+        <h2>Aspire Academy (Catar)</h2>
+        <p>El modelo del futuro: inversión masiva del Estado, tecnología de punta y captación de talento en todo el mundo. Aunque controvertida, ha demostrado que con suficientes recursos se pueden acortar décadas de desarrollo.</p>
+
+        <h2>¿Qué hace grande a una cantera?</h2>
+        <p>Más allá de las instalaciones, las mejores academias tienen un modelo de juego claro que permea todas las categorías, entrenadores que priorizan el desarrollo sobre el resultado, y un ambiente que equilibra exigencia con bienestar del jugador.</p>
 
         <div class="btn-volver-container">
             <a href="index.html" class="btn-volver">← Volver al Inicio</a>
         </div>
-
     </main>
 
-    <footer class="main-footer">
+    <footer style="background: #111; color: #666; text-align: center; padding: 40px;">
         <p>&copy; 2026 El Vestuario. Todos los derechos reservados.</p>
     </footer>
 
