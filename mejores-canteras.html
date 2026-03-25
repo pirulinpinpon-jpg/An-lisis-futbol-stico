@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fábricas de Talentos: Mejores Canteras - El Vestuario</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;700;400i&display=swap" rel="stylesheet">
     
     <style>
         /* Estilos base */
         body {
-            background-color: #f4f4f4; /* Fondo gris claro */
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            font-family: 'Lora', serif; /* Fuente elegante para los artículos */
+            font-family: 'Lora', serif;
             color: #333;
             line-height: 1.8;
         }
@@ -58,29 +58,62 @@
             font-weight: bold;
         }
 
+        /* HERO SECTION (El fondo negro superior que faltaba) */
+        .article-hero {
+            background-color: #000000;
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left; /* Alineado a la izquierda como en tu diseño */
+        }
+
+        .badge-categoria {
+            background-color: #1b5e20;
+            color: white;
+            display: inline-block;
+            padding: 6px 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.75rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-family: 'Lora', serif;
+            color: white;
+            font-size: 2.8rem;
+            margin: 0 0 15px 0;
+            line-height: 1.2;
+        }
+
+        .hero-meta {
+            font-family: 'Montserrat', sans-serif;
+            color: #aaa;
+            font-style: italic;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
         /* Tarjeta Blanca Central */
         .article-container {
             max-width: 800px;
-            margin: 50px auto;
+            margin: 40px auto 60px auto;
             background-color: white;
             padding: 50px;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
 
-        /* Títulos y Subtítulos */
-        h1 {
-            font-family: 'Montserrat', sans-serif;
-            color: #1b5e20;
-            text-align: center;
-            font-size: 2.2rem;
-            margin-bottom: 40px;
-        }
-
+        /* Subtítulos */
         h2 {
             font-family: 'Montserrat', sans-serif;
             color: #1b5e20;
-            border-left: 4px solid #1b5e20; /* La línea verde lateral */
+            border-left: 4px solid #1b5e20;
             padding-left: 15px;
             margin-top: 40px;
             margin-bottom: 15px;
@@ -94,8 +127,8 @@
 
         /* Caja de "Dato Élite" */
         .dato-elite {
-            background-color: #e8f5e9; /* Verde muy clarito */
-            border-left: 4px solid #4caf50; /* Verde brillante */
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
             padding: 20px;
             margin: 30px 0;
             border-radius: 0 8px 8px 0;
@@ -157,9 +190,15 @@
 
         /* Responsivo para móviles */
         @media (max-width: 850px) {
+            .article-container, .hero-content {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
             .article-container {
-                margin: 20px;
                 padding: 30px 20px;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
             }
         }
     </style>
@@ -174,10 +213,16 @@
         </div>
     </header>
 
+    <div class="article-hero">
+        <div class="hero-content">
+            <span class="badge-categoria">ANÁLISIS</span>
+            <h1>Fábricas de Talentos: Las Mejores Canteras del Mundo</h1>
+            <p class="hero-meta">Publicado por El Vestuario • 22 de marzo de 2026</p>
+        </div>
+    </div>
+
     <main class="article-container">
         
-        <h1>Fábricas de Talentos: Las Mejores Canteras del Mundo</h1>
-
         <p>No todos los grandes jugadores nacen; muchos se forjan en las canteras. Estas academias son laboratorios donde el talento en bruto se convierte en obra de arte futbolística. ¿Cuáles son las mejores del mundo?</p>
 
         <h2>La Masia (FC Barcelona)</h2>
