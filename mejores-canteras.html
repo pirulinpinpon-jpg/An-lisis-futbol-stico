@@ -3,76 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fábricas de Talentos: Las Mejores Canteras del Mundo - El Vestuario</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Fábricas de Talentos: Mejores Canteras - El Vestuario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
-        /* CSS necesario para el efecto de la imagen SIN borrar nada */
-        .article-header {
-            background-color: #f4f4f4; /* Fondo gris claro general */
-            padding-bottom: 20px;
+        /* Estilos base */
+        body {
+            background-color: #f4f4f4; /* Fondo gris claro */
+            margin: 0;
+            padding: 0;
+            font-family: 'Lora', serif; /* Fuente elegante para los artículos */
+            color: #333;
+            line-height: 1.8;
         }
 
-        /* Esta es la parte de la imagen de fondo, aplicada SOLO al contenedor de arriba */
-        .hero-banner {
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.9)), url('canteras.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 350px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end; /* Título abajo, como en el index */
-            padding: 30px;
+        /* Header Verde Superior */
+        .main-header {
+            background-color: #1b5e20;
             color: white;
-            text-align: left;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .header-logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
         }
 
-        /* La "tarjeta blanca" central que te borré. ¡Aquí está de vuelta! */
+        .header-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .btn-dark-mode {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.5);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        /* Tarjeta Blanca Central */
         .article-container {
             max-width: 800px;
-            margin: 0 auto; /* Centrada */
-            margin-top: -50px; /* Sube la tarjeta para pisar la imagen */
-            background: white; /* Fondo blanco de la tarjeta */
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            position: relative;
-            z-index: 10;
+            margin: 50px auto;
+            background-color: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Títulos y Subtítulos */
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #1b5e20;
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #1b5e20;
+            border-left: 4px solid #1b5e20; /* La línea verde lateral */
+            padding-left: 15px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Caja de "Dato Élite" */
+        .dato-elite {
+            background-color: #e8f5e9; /* Verde muy clarito */
+            border-left: 4px solid #4caf50; /* Verde brillante */
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .dato-elite strong {
+            color: #1b5e20;
+        }
+
+        /* Línea separadora y Botón final */
+        hr {
+            border: none;
+            border-top: 1px solid #eaeaea;
+            margin: 40px 0;
+        }
+
+        .btn-volver-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-volver {
+            background-color: #1b5e20;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: background 0.3s;
+        }
+
+        .btn-volver:hover {
+            background-color: #144d18;
+        }
+
+        /* Footer Oscuro */
+        .main-footer {
+            background-color: #1a1a1a;
+            color: #aaa;
+            text-align: center;
+            padding: 40px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            margin-top: 15px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        /* Responsivo para móviles */
+        @media (max-width: 850px) {
+            .article-container {
+                margin: 20px;
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header style="background-color: #1b5e20; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center;">
-        <div style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 1.2rem;">⚽ EL VESTUARIO</div>
-        <a href="index.html" style="color: white; text-decoration: none; font-size: 0.9rem;">← Inicio</a>
+    <header class="main-header">
+        <div class="header-logo">⚽ EL VESTUARIO</div>
+        <div class="header-links">
+            <a href="index.html">← Inicio</a>
+            <button class="btn-dark-mode">🌙 MODO OSCURO</button>
+        </div>
     </header>
 
-    <div class="article-header">
-        <div class="hero-banner">
-            <span style="color: #ffd700; font-weight: bold; font-size: 0.8rem;">ANÁLISIS</span>
-            <h1 style="font-family: 'Playfair Display', serif; font-size: 2.8rem; margin: 5px 0 10px 0;">Fábricas de Talentos: Las Mejores Canteras del Mundo</h1>
-            <p style="margin: 0; opacity: 0.8; font-size: 0.9rem;">Publicado por El Vestuario • 22 de marzo de 2026</p>
+    <main class="article-container">
+        
+        <h1>Fábricas de Talentos: Las Mejores Canteras del Mundo</h1>
+
+        <p>No todos los grandes jugadores nacen; muchos se forjan en las canteras. Estas academias son laboratorios donde el talento en bruto se convierte en obra de arte futbolística. ¿Cuáles son las mejores del mundo?</p>
+
+        <h2>La Masia (FC Barcelona)</h2>
+        <p>La academia más famosa del mundo produjo a Messi, Xavi, Iniesta, Busquets, Piqué y Cesc Fàbregas en una misma generación. Su modelo de juego basado en el toque corto y la inteligencia posicional dejó una huella permanente en el fútbol global.</p>
+
+        <div class="dato-elite">
+            🏆 <strong>Dato Élite:</strong> En 2012, el once titular de la selección española que dominó el mundo estaba formado mayoritariamente por jugadores formados en La Masia. Algo irrepetible en la historia del fútbol.
         </div>
 
-        <div class="article-container">
-            <p class="lead" style="font-size: 1.1rem; color: #555; line-height: 1.6;">En el fútbol moderno, donde los fichajes son astronómicos, la capacidad de formar jugadores desde la base se ha convertido en una ventaja competitiva fundamental. Las canteras no solo son el alma de los clubes, sino también su salvación financiera.</p>
-            
-            <p>Analizamos las estructuras de formación más exitosas del planeta, aquellas que de manera consistente producen jugadores de élite que definen épocas.</p>
+        <h2>Ajax Amsterdam</h2>
+        <p>La academia holandesa lleva décadas produciendo jugadores técnicamente perfectos. Su filosofía del Fútbol Total impregna cada etapa de formación, enseñando a los niños a jugar en todos los puestos antes de especializarse.</p>
 
-            <p style="margin-top: 20px;"><b>[Aquí va todo el resto del texto detallado del artículo: La Masía, Ajax, Boca Juniors, Benfica, etc...]</b></p>
-            
-            <p>Puedes ir pegando aquí el resto de tu contenido original...</p>
+        <h2>Aspire Academy (Catar)</h2>
+        <p>El modelo del futuro: inversión masiva del Estado, tecnología de punta y captación de talento en todo el mundo. Aunque controvertida, ha demostrado que con suficientes recursos se pueden acortar décadas de desarrollo.</p>
+
+        <h2>¿Qué hace grande a una cantera?</h2>
+        <p>Más allá de las instalaciones, las mejores academias tienen un modelo de juego claro que permea todas las categorías, entrenadores que priorizan el desarrollo sobre el resultado, y un ambiente que equilibra exigencia con bienestar del jugador.</p>
+
+        <hr>
+
+        <div class="btn-volver-container">
+            <a href="index.html" class="btn-volver">← Volver al Inicio</a>
         </div>
-    </div>
 
-    <footer style="text-align: center; padding: 30px; background-color: #f4f4f4; margin-top: 40px;">
-        <p style="font-size: 0.9rem; color: #777;">&copy; 2026 El Vestuario. Todos los derechos reservados.</p>
-        <div style="margin-top: 10px;">
-            <a href="quienes-somos.html" style="margin: 0 10px; color: #1b5e20; text-decoration: none;">Quiénes Somos</a> |
-            <a href="privacidad.html" style="margin: 0 10px; color: #1b5e20; text-decoration: none;">Privacidad</a> |
-            <a href="terminos.html" style="margin: 0 10px; color: #1b5e20; text-decoration: none;">Términos y Condiciones</a> |
-            <a href="contacto.html" style="margin: 0 10px; color: #1b5e20; text-decoration: none;">Contacto</a>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 El Vestuario. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="quienes-somos.html">Quiénes Somos</a>
+            <a href="privacidad.html">Privacidad</a>
+            <a href="terminos.html">Términos y Condiciones</a>
+            <a href="contacto.html">Contacto</a>
         </div>
     </footer>
 
